@@ -25,5 +25,28 @@ namespace APIs.Controllers
 
             return employees;
         }
+
+
+
+        [Route("GetEmployees/{id}")]
+        [HttpGet]
+        public Employee GetCampaignNameFromProgram(int id)
+        {
+            var employees = new Employee();
+
+            using (var dbContext = new PortfolioProjectContext())
+            {
+                employees = dbContext.Employees
+                    .Where(x => x.UserId == id)
+                    .SingleOrDefault();
+            }
+
+            return employees;
+        }
+
+
+
     }
+
+
 }
