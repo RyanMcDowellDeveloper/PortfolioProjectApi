@@ -43,9 +43,7 @@ C:\Users\Ryan\source\repos\PortfolioBusine\APIs\bin\Debug\netcoreapp3.1\runtimes
 C:\Users\Ryan\source\repos\PortfolioBusine\APIs\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
 C:\Users\Ryan\source\repos\PortfolioBusine\APIs\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\Ryan\source\repos\PortfolioBusine\APIs\bin\Debug\netcoreapp3.1\DataAccess.dll
-C:\Users\Ryan\source\repos\PortfolioBusine\APIs\bin\Debug\netcoreapp3.1\PortfolioBusine.dll
 C:\Users\Ryan\source\repos\PortfolioBusine\APIs\bin\Debug\netcoreapp3.1\DataAccess.pdb
-C:\Users\Ryan\source\repos\PortfolioBusine\APIs\bin\Debug\netcoreapp3.1\PortfolioBusine.pdb
 C:\Users\Ryan\source\repos\PortfolioBusine\APIs\obj\Debug\netcoreapp3.1\APIs.csprojAssemblyReference.cache
 C:\Users\Ryan\source\repos\PortfolioBusine\APIs\obj\Debug\netcoreapp3.1\APIs.AssemblyInfoInputs.cache
 C:\Users\Ryan\source\repos\PortfolioBusine\APIs\obj\Debug\netcoreapp3.1\APIs.AssemblyInfo.cs
@@ -135,8 +133,11 @@ C:\Users\Ryan\source\repos\PortfolioBusine\APIs\obj\Debug\netcoreapp3.1\APIs.pdb
 C:\Users\Ryan\source\repos\PortfolioBusine\APIs\obj\Debug\netcoreapp3.1\APIs.genruntimeconfig.cache
 C:\Users\Ryan\source\repos\PortfolioBusine\APIs\bin\Debug\netcoreapp3.1\Humanizer.dll
 C:\Users\Ryan\source\repos\PortfolioBusine\APIs\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
-C:\Users\Ryan\source\repos\PortfolioBusine\APIs\obj\Debug\netcoreapp3.1\APIs.csproj.CoreCompileInputs.cache
-C:\Users\Ryan\source\repos\PortfolioBusine\APIs\obj\Debug\netcoreapp3.1\APIs.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\Ryan\source\repos\PortfolioBusine\APIs\bin\Debug\netcoreapp3.1\Properties\serviceDependencies.json
 C:\Users\Ryan\source\repos\PortfolioBusine\APIs\bin\Debug\netcoreapp3.1\Properties\serviceDependencies.local.json
+C:\Users\Ryan\source\repos\PortfolioBusine\APIs\obj\Debug\netcoreapp3.1\APIs.csproj.CoreCompileInputs.cache
+C:\Users\Ryan\source\repos\PortfolioBusine\APIs\obj\Debug\netcoreapp3.1\APIs.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\Ryan\source\repos\PortfolioBusine\APIs\obj\Debug\netcoreapp3.1\APIs.sourcelink.json
+C:\Users\Ryan\source\repos\PortfolioBusine\APIs\bin\Debug\netcoreapp3.1\System.Net.Http.Formatting.dll
+C:\Users\Ryan\source\repos\PortfolioBusine\APIs\bin\Debug\netcoreapp3.1\System.Web.Http.dll
+C:\Users\Ryan\source\repos\PortfolioBusine\APIs\bin\Debug\netcoreapp3.1\Newtonsoft.Json.Bson.dll

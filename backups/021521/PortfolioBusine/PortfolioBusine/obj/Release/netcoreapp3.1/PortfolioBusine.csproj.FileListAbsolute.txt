@@ -1,0 +1,14 @@
+C:\Users\Ryan\source\repos\PortfolioBusine\PortfolioBusine\bin\Release\netcoreapp3.1\PortfolioBusine.deps.json
+C:\Users\Ryan\source\repos\PortfolioBusine\PortfolioBusine\bin\Release\netcoreapp3.1\PortfolioBusine.runtimeconfig.json
+C:\Users\Ryan\source\repos\PortfolioBusine\PortfolioBusine\bin\Release\netcoreapp3.1\PortfolioBusine.runtimeconfig.dev.json
+C:\Users\Ryan\source\repos\PortfolioBusine\PortfolioBusine\bin\Release\netcoreapp3.1\PortfolioBusine.dll
+C:\Users\Ryan\source\repos\PortfolioBusine\PortfolioBusine\bin\Release\netcoreapp3.1\PortfolioBusine.pdb
+C:\Users\Ryan\source\repos\PortfolioBusine\PortfolioBusine\bin\Release\netcoreapp3.1\DataAccess.dll
+C:\Users\Ryan\source\repos\PortfolioBusine\PortfolioBusine\bin\Release\netcoreapp3.1\DataAccess.pdb
+C:\Users\Ryan\source\repos\PortfolioBusine\PortfolioBusine\obj\Release\netcoreapp3.1\PortfolioBusine.csprojAssemblyReference.cache
+C:\Users\Ryan\source\repos\PortfolioBusine\PortfolioBusine\obj\Release\netcoreapp3.1\PortfolioBusine.AssemblyInfoInputs.cache
+C:\Users\Ryan\source\repos\PortfolioBusine\PortfolioBusine\obj\Release\netcoreapp3.1\PortfolioBusine.AssemblyInfo.cs
+C:\Users\Ryan\source\repos\PortfolioBusine\PortfolioBusine\obj\Release\netcoreapp3.1\PortfolioBusine.csproj.CopyComplete
+C:\Users\Ryan\source\repos\PortfolioBusine\PortfolioBusine\obj\Release\netcoreapp3.1\PortfolioBusine.dll
+C:\Users\Ryan\source\repos\PortfolioBusine\PortfolioBusine\obj\Release\netcoreapp3.1\PortfolioBusine.pdb
+C:\Users\Ryan\source\repos\PortfolioBusine\PortfolioBusine\obj\Release\netcoreapp3.1\PortfolioBusine.genruntimeconfig.cache
