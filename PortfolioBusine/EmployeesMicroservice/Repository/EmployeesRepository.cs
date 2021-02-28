@@ -1,12 +1,16 @@
 ﻿using EmployeesMicroservice.EFModels;
 using EmployeesMicroservice.ReportingLogic.EmployeeSalesReport;
 using EmployeesMicroservice.ReportModels;
+using EmployeesMicroservice.ReportModels.TotalSalesByEmployee;
+using EmployeesMicroservice.Reports.TotalSalesByEmployee.Models;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
 using System.Threading.Tasks;
+using EmployeesMicroservice.Reports.TotalSalesByEmployee;
+using EmployeesMicroservice.Reports.TotalSalesByEmployee.FIlters;
 
 namespace EmployeesMicroservice.Repository
 {
@@ -72,8 +76,43 @@ namespace EmployeesMicroservice.Repository
 
         public IEnumerable<IEmployeeSalesReportData> GetEmployeeSalesReport(EmployeeSalesReportParams reportParams)
         {
-            var getReports = new GetEmployeeSalesReportData(reportParams);
-            return getReports.GetReportData();
+            var getReportData = new GetEmployeeSalesReportData(reportParams);
+            return getReportData.GetReportData();
+        }
+
+        public IEnumerable<ITotalSalesByEmployee> GetTotalEmployeeSalesReport(TotalSalesByEmployeeParams reportParams)
+        {
+            var getEmployeeTotal = new GetEmployeeTotalSales();
+            ICriteria criteria;
+
+            var reporData = getEmployeeTotal.GetData();
+
+            if (reportParams.maxSalary != null)
+            {
+                criteria = new MaxAmountFilter(reportParams.maxSalary);
+                reporData = criteria.meetCriteria(reporData);
+            }
+
+            if (reportParams.minSalary != null)
+            {
+                criteria = new MinAmountFilter(reportParams.minSalary);
+                reporData = criteria.meetCriteria(reporData);
+            }
+            return reporData;
+        }
+
+        public IEnumerable<City> GetCities()
+        {
+            var cities = new List<City>();
+
+            using (var portfolioContext = new PortfolioProjectContext())
+            {
+                cities = portfolioContext
+                    .Cities
+                    .OrderBy(s => s.City1)
+                    .ToList();
+            }
+            return cities;
         }
 
     }

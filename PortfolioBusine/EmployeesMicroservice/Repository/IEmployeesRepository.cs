@@ -1,5 +1,7 @@
 ﻿using EmployeesMicroservice.EFModels;
 using EmployeesMicroservice.ReportModels;
+using EmployeesMicroservice.ReportModels.TotalSalesByEmployee;
+using EmployeesMicroservice.Reports.TotalSalesByEmployee.Models;
 using System.Collections.Generic;
 
 namespace EmployeesMicroservice.Repository
@@ -12,5 +14,8 @@ namespace EmployeesMicroservice.Repository
         void CreateEmployee(Employee employee);
         void DeleteEmployee(int employeeId);
         IEnumerable<IEmployeeSalesReportData> GetEmployeeSalesReport(EmployeeSalesReportParams reportParams);
+        IEnumerable<ITotalSalesByEmployee> GetTotalEmployeeSalesReport(TotalSalesByEmployeeParams reportParams);
+        IEnumerable<City> GetCities();
+
     }
 }

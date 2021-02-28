@@ -17,6 +17,7 @@ namespace EmployeesMicroservice.EFModels
         {
         }
 
+        public virtual DbSet<City> Cities { get; set; }
         public virtual DbSet<Customer> Customers { get; set; }
         public virtual DbSet<Employee> Employees { get; set; }
         public virtual DbSet<EmployeeType> EmployeeTypes { get; set; }
@@ -36,6 +37,16 @@ namespace EmployeesMicroservice.EFModels
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.HasAnnotation("Relational:Collation", "SQL_Latin1_General_CP1_CI_AS");
+
+            modelBuilder.Entity<City>(entity =>
+            {
+                entity.Property(e => e.Id).HasColumnName("id");
+
+                entity.Property(e => e.City1)
+                    .HasMaxLength(155)
+                    .IsUnicode(false)
+                    .HasColumnName("city");
+            });
 
             modelBuilder.Entity<Customer>(entity =>
             {

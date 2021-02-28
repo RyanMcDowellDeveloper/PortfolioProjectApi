@@ -28,7 +28,6 @@ namespace EmployeesMicroservice
         public void ConfigureServices(IServiceCollection services)
         {
             services.Add(new ServiceDescriptor(typeof(IEmployeesRepository), new EmployeesRepository()));
-            services.Add(new ServiceDescriptor(typeof(IApplyQueryFilters), new ApplyQueryFilters()));
 
             services.AddCors(o => o.AddPolicy("MyCorsPolicy", builder =>
             {

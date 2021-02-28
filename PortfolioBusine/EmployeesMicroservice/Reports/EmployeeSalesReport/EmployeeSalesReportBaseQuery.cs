@@ -1,24 +1,15 @@
-﻿using EmployeesMicroservice.ReportModels;
+﻿using EmployeesMicroservice.EFModels;
+using EmployeesMicroservice.ReportModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using EmployeesMicroservice.EFModels;
 
 namespace EmployeesMicroservice.ReportingLogic.EmployeeSalesReport
 {
-    public class GetEmployeeSalesReportData
+    public class EmployeeSalesReportBaseQuery : IGetEmployeeSalesReportData
     {
-        IApplyQueryFilters _applyFilters = new ApplyQueryFilters();
-        IEmployeeSalesReportParams _reportParams;
-
-        //constructor
-        public GetEmployeeSalesReportData(IEmployeeSalesReportParams reportParams)
-        {
-            _reportParams = reportParams;
-        }
-
-        public IEnumerable<IEmployeeSalesReportData> GetReportData()
+        public IEnumerable<IEmployeeSalesReportData> Executequery()
         {
             var reportData = new List<IEmployeeSalesReportData>();
 
@@ -39,11 +30,11 @@ namespace EmployeesMicroservice.ReportingLogic.EmployeeSalesReport
                                        userID = emp.UserId
                                    });
 
-                reportData = _applyFilters.filter(_reportParams, queryResult).ToList();
+                //reportData = _applyFilters.filter(_reportParams, queryResult).ToList();
+                reportData = queryResult.ToList<IEmployeeSalesReportData>();
             }
 
             return reportData;
         }
     }
 }
-

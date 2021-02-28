@@ -5,6 +5,8 @@ using System.Threading.Tasks;
 using EmployeesMicroservice.EFModels;
 using EmployeesMicroservice.ReportingLogic.EmployeeSalesReport;
 using EmployeesMicroservice.ReportModels;
+using EmployeesMicroservice.ReportModels.TotalSalesByEmployee;
+using EmployeesMicroservice.Reports.TotalSalesByEmployee.Models;
 using EmployeesMicroservice.Repository;
 using Microsoft.AspNetCore.Mvc;
 
@@ -71,6 +73,20 @@ namespace EmployeesMicroservice.Controllers
         public IEnumerable<IEmployeeSalesReportData> GetEmployeeSalesReport(EmployeeSalesReportParams reportParams)
         {
             return _employeesRepository.GetEmployeeSalesReport(reportParams);
+        }
+
+        [HttpPost]
+        [Route("GetEmployeeTotalSalesReport")]
+        public IEnumerable<ITotalSalesByEmployee> GetTotalEmployeeSalesReport(TotalSalesByEmployeeParams reportParams)
+        {
+            return _employeesRepository.GetTotalEmployeeSalesReport(reportParams);
+        }
+
+        [HttpGet]
+        [Route("GetListUsaCities")]
+        public IEnumerable<City> GetListUsaCities()
+        {
+            return _employeesRepository.GetCities();
         }
     }
 }
